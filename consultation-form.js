@@ -1,26 +1,4 @@
 const consultationBtn = document.querySelector(".consultation-btn");
-consultationBtn.addEventListener("click", validateForm);
-
-function validateForm(event) {
-  event.preventDefault();
-  
-  const nameField = document.querySelector(".name");
-  const emailField = document.querySelector(".mail");
-  const messageField = document.querySelector("#input-message");
-  
-  if (nameField.value === "") {
-    showErrorMessage(nameField, "Name is required");
-    return;
-  }
-  
-  if (emailField.value === "") {
-    showErrorMessage(emailField, "Email is required");
-    return;
-  }
-  
-  // All fields are filled, proceed to the thank you page
-  window.location.href = "typewriter-text.html";
-}
 
 function showErrorMessage(field, message) {
   const errorMessage = document.createElement("div");
@@ -40,13 +18,15 @@ function showErrorMessage(field, message) {
   // Append the error message to the container
   errorContainer.appendChild(errorMessage);
   
-  // Append the error container after the field
-  field.classList.add("error");
-  field.parentNode.appendChild(errorContainer);
+  // Find the parent container of the field div
+  const fieldContainer = field.closest(".field");
   
+  // Append the error container to the field container
+  fieldContainer.appendChild(errorContainer);
+  
+  field.classList.add("error");
   field.addEventListener("input", clearErrorMessage);
 }
-
 
 function clearErrorMessage() {
   const field = this;
