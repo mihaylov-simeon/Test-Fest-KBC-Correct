@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Consultation Form</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="consultation-form.css">
+  </head>
+  <body>
+    <div class="bg-img">
+      <div class="content">
+        <header>Book a consultation</header>
+
+        <form>
+          <div class="field">
+            <input type="name_text" class="name" required placeholder="Name" onkeydown="return /[a-zA-Z ]/i.test(event.key)">
+          </div>
+
+          <div class="field">
+            <input type="email_text" class="mail" required placeholder="Email">
+          </div>
+
+          <div class="field">
+            <textarea id="input-message" cols="30" rows="10" required placeholder="Message"></textarea>
+          </div>
+          
+          <div class="login-field">
+            <button class="consultation-btn" onclick="thankYouPageHandler(event)">BOOK CONSULTATION</button>
+          </div>
+        </form>
+        
+        
+        <div class="signup">Don't have an account?
+          <a href="#">Signup Now</a>
+        </div>
+
+        <div class="cancel-field">
+          <button class="cancel-btn">CANCEL CONSULTATION</button>
+        </div>
+      </div>
+    </div>
+    <script src="consultation-form.js"></script>
+    <script src="cancel.js"></script>
+  </body>
+</html>

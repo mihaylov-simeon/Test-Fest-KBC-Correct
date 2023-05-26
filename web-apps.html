@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Web Apps</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn3.iconfinder.com/data/icons/luchesa-vol-9/128/Html-512.png">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="card-light.css">
+    <link rel="stylesheet" href="card-pages.css" id="main-stylesheet" />
+
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header class="header">
+        <a href="#hero">
+            <img src="img/logo.png" alt="Logo" class="logo">
+            <button class="logoText" title="Go to top logo">.Codika</button>
+        </a>
+
+        <div class="switcher-wrapper">
+          <span id="label">THEME</span>
+          <div class="theme-switcher">
+              <input type="checkbox" id="switcher">
+              <label for="switcher">Theme </label>
+          </div>
+      </div>
+
+      <nav class="navigation">
+        <ul class="nav-list" type="none">
+          <li><a href="#">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="welcome">
+        <div class="title">
+          <h1>Web Apps</h1>
+          <p>Building Your Business Presence</p>
+        </div>
+        <div class="hero-img">
+          <img src="img/web-apps.png" alt="App Screenshot" />
+        </div>
+      </div>
+      <ul type="none">
+        <li>
+          <h2>What are Web Apps?</h2>
+          <p>
+            Web apps are applications that run on web browsers like Chrome,
+            Firefox, and Safari. They provide similar functionality to native
+            apps, but they do not need to be downloaded or installed on a
+            device.
+          </p>
+        </li>
+        <br>
+        <li>
+          <h2>How Do Companies Build Web Apps?</h2>
+          <p>
+            Companies can build web apps using web technologies like HTML, CSS,
+            and JavaScript. They can also use web development frameworks and
+            libraries like React, Angular, and Vue.
+          </p>
+        </li>
+        <br>
+        <li>
+          <h2>Why Build Web Apps?</h2>
+          <p>
+            Web apps are a great way for companies to provide a seamless user
+            experience across multiple devices and platforms. They are also
+            cost-effective since they do not require separate development for
+            different platforms.
+          </p>
+        </li>
+        <br>
+        
+      </ul>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+
+            <div class="footer-middle-text">
+                <p>Terms & Conditions</p>
+                <p>Privacy Policy</p>
+            </div>
+
+            <p>2023 All rights reserved</p>
+        </div>
+    </footer>
+    
+    <script src="theme-switcher-card-pages.js"></script>
+    <script src="return-to-home.js"></script>
+  </body>
+</html>

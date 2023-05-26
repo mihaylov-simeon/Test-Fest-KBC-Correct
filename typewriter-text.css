@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+body {
+  padding: 60px;
+  margin: 0;
+  background: linear-gradient(to top, #01000a 0%, #000c32 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  max-width: 100%;
+}
+
+#parent {
+  height: 40px;
+  white-space: nowrap;
+  overflow: hidden; 
+  font-family: 'Source Code Pro', monospace;  
+  font-size: 28px;
+  color: rgba(255,255,255,.70);
+  position: relative;
+  margin: 0 auto;
+}
+
+#border {
+  border-bottom: solid 3px rgba(0,255,0,.75);
+  position: absolute;
+  right: -7px;
+  width: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  z-index: 1000;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.logo {
+  width: 35px;
+  display: inline;
+}
+
+.logoText {
+  background-color: transparent;
+  border: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #fff;
+  display: inline;
+}
+
+#header .navigation {
+  margin-left: auto;
+}
+
+#header .nav-list {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-right: 30px;
+  font-weight: bold;
+}
+
+#header .nav-list a {
+  color: #fff;
+  border: 2px solid transparent;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 4px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#header .nav-list a:hover {
+  color: #000c21;
+  transition: 0.8s;
+  cursor: pointer;
+  box-shadow: inset 100px 0 0 0 #e0e0fd;
+}
+/* Animation */
+#parent {
+  animation: animated-text 2s steps(30,end) 0.5s 1 normal both;
+}
+
+#border {
+   animation: animated-cursor 800ms steps(30,end) infinite;
+}
+
+.header {
+  animation: jackInTheBox 1s steps(30,end) 0.5s 1 normal both;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 518px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor {
+  from{border-bottom-color: rgba(0,255,0,.75);}
+  to{border-bottom-color: transparent;}
+}
+
+@media screen and (max-width: 715px) {
+  #parent {
+    font-size: 1.5rem;
+  }
+
+  @keyframes animated-text{
+    from{width: 0;}
+    to{width: 450px;}
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #parent {
+    font-size: 1.3rem;
+  }
+
+  @keyframes animated-text{
+    from{width: 0;}
+    to{width: 395px;}
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #parent {
+    font-size: 1rem;
+  }
+
+  @keyframes animated-text{
+    from{width: 0;}
+    to{width: 395px;}
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #parent {
+    font-size: 0,7rem;
+  }
+
+  @keyframes animated-text{
+    from{width: 0;}
+    to{width: 395px;}
+  }
+}
+
+
+
+

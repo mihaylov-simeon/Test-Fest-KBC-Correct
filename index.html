@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css" id="main-stylesheet">
+    <link rel="stylesheet" href="login-form-style.css">
+    <link rel="stylesheet" href="consultation-form.css">
+    <title>.Codika</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn3.iconfinder.com/data/icons/luchesa-vol-9/128/Html-512.png">
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <header class="header">
+        <a href="#hero">
+        <img src="img/logo.png" alt="Logo" class="logo">
+        <button onclick="topFunction()" class="logoText" title="Go to top logo">.Codika</button>
+    </a>
+
+    <div class="switcher-wrapper">
+        <span id="label">THEME</span>
+        <div class="theme-switcher">
+            <input type="checkbox" id="switcher">
+            <label for="switcher">Theme </label>
+        </div>
+    </div>
+    
+        <nav class="navigation" id="nav-bar">
+            <ul class="nav-list" role="list">
+                <li class="nav-item">
+                    <a href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#how">How</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#pricing">Pricing</a>
+                </li>
+            </ul>
+        </nav>
+        <button class="btn">Login</button>
+    </header>
+    
+        <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+        </div>
+
+    <!-- MAIN SECTION -->
+    <main>
+        <section id="hero">
+            <div class="welcome" id="welcome-heading">
+                <h1 class="title">
+                    Turning ideas into code!
+                </h1>
+
+                <div>
+                    <p class="info">You don't need to understand coding! Our specialists will consult every idea and 
+                        come-up with the best solution for your software and your business! 
+                    </p>
+
+                    <a href="#"><button class="btn btn-primary">
+                            Book a consultation
+                        </button></a>
+                </div>
+            </div>
+
+            <img src="img/hero.png" alt="Hero" class="hero-img">
+
+            <ul class="partners" role="list">
+                <li class="partner">
+                    <a href="https://www.java.com/en/" target="_blank"><img src="img/java.png" alt="Java"
+                            class="partner-logo"></a>
+                </li>
+                <li class="partner">
+                    <a href="https://spring.io//" target="_blank"><img src="img/spring.png" alt="Spring" class="partner-logo"></a>
+                </li>
+                <li class="partner">
+                    <a href="https://www.selenium.dev/" target="_blank"><img src="img/selenium.png" alt="Selenium"
+                            class="partner-logo"></a>
+                </li>
+                <li class="partner">
+                    <a href="https://www.javascript.com/" target="_blank"><img src="img/html.png" alt="HTML" class="partner-logo"></a>
+                </li>
+                <li class="partner">
+                    <a href="https://www.android.com/" target="_blank"><img src="img/android.png" alt="Android"
+                            class="partner-logo"></a>
+                </li>
+                <li class="partner">
+                    <a href="https://www.figma.com/" target="_blank"><img src="img/figma.png" alt="Figma"
+                            class="partner-logo"></a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- FEATURES SECTION -->
+        <section id="features">
+            <div class="wrapper">
+                <h1 class="title">Features</h1>
+                <p class="info-features">Unique and tailor-made web applications for all devices!</p>
+            </div>
+
+            <div class="card-wrapper">
+                <div class="card">
+                    <i class="fas fa-columns"></i>
+                    <h3>Website Apps</h3>
+                    <p>No matter how simple or complex
+                        you want your website - we can do it!
+                        We use the latest tools and technologies
+                        to deliver a high-quality product and
+                        to get your app to the next level!
+                    </p>
+                </div>
+
+                <div class="card">
+                    <i class="fas fa-comments"></i>
+                    <h3>Web Development Consultation</h3>
+                    <p>You don't need to know it! We know it
+                        for you. Consult with our proven
+                        specialists and help us evaluate
+                        your business goals and ensure
+                        a successful project!
+                    </p>
+                </div>
+
+                <div class="card">
+                    <i class="fas fa-shapes"></i>
+                    <h3>Back-end Development</h3>
+                    <p>The back-end is the driver!
+                        You cannot see it, but it's
+                        there and it is very important
+                        for it to be perfect! Drop your
+                        requirements and we will develop
+                        it for you!
+                    </p>
+                </div>
+
+                <div class="card">
+                    <i class="fas fa-chart-bar"></i>
+                    <h3>UX/UI Design</h3>
+                    <p>What is an app without a unique design?
+                        We put 100% of our efforts for creating
+                        a unique business application and help
+                        you steal your customers hearts. 
+                    </p>
+                </div>
+
+                <div class="card">
+                    <i class="fas fa-users"></i>
+                    <h3>API Development</h3>
+                    <p>We will create a custom APIs
+                        for your product free-of-cost.
+                        This will increase the possibilities
+                        and functionallity of your website.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <i class="fas fa-folder-plus"></i>
+                    <h3>Personal Maintenance</h3>
+                    <p>Of course you will need further Maintenance.
+                        We provide that as well. We even prefer it!
+                        We can help your business website or app
+                        to stay updated and up with the latest trends.
+                    </p>
+                </div>
+            </div>
+
+            <div class="trial">
+                <p class="ready">Ready to start?</p>
+                <h3 class="start">Our professionals are waiting for your ideas!</h3>
+                <button class="start-trial-btn">Get Started<i class="fas fa-arrow-right"></i></button>
+            </div>
+        </section>
+
+        <!-- HOW IT WORKS SECTION -->
+        <section id="how">
+            <p class="section-subtitle">.CODIKA</p>
+            <h2 class="section-title">Where do we start?</h2>
+
+            <div class="row">
+                <img src="img/group-1.png" alt="group-1" class="row-img">
+
+                <div class="wrapper">
+                    <h3 class="title">Project Analysis and Strategy Planning</h3>
+                    <p class="description">A thorough analysis of the 
+                        project's goals, objectives, and constraints can help identify potential 
+                        risks and opportunities. Strategy planning involves developing a clear 
+                        roadmap for achieving project objectives and goals.
+                    </p>
+                </div>
+            </div>
+
+            <div class="hr-container">
+                <hr />
+            </div>
+
+            <p class="section-subtitle">.CODIKA</p>
+            <h2 class="section-title">How do we do it?</h2>
+
+            <div class="row">
+                <img src="img/group-2.png" alt="group-2" class="row-img">
+
+                <div class="wrapper">
+                    <h3 class="title">UI/UX Design and Software Development</h3>
+                    <p class="description"> 
+                        UI/UX design focuses on creating a visually appealing and user-friendly 
+                        interface, while Android app development involves building the app's 
+                        functionality and features. A well-designed UI/UX and Development can enhance user 
+                        engagement and improve the app's overall user experience.
+                    </p>
+                </div>
+            </div>
+
+            <div class="hr-container">
+                <hr />
+            </div>
+
+            <p class="section-subtitle">.CODIKA</p>
+            <h2 class="section-title">What happens next?</h2>
+
+            <div class="row">
+                <img src="img/group-3.png" alt="group-3" class="row-img">
+
+                <div class="wrapper">
+                    <h3 class="title">App Testing, Launch & Maintenance</h3>
+                    <p class="description">App testing involves identifying and addressing any 
+                        issues or bugs before launching the app. Launching the app involves creating a marketing 
+                        plan and making it available for download on various app stores. Maintenance involves 
+                        regularly updating and improving the app to meet user needs and address any new issues 
+                        that arise.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRICING SECTION -->
+        <section id="pricing">
+
+            <div class="pricing-title">
+                <p class="section-subtitle">.CODIKA</p>
+                <h1 class="title">Maintenance Pricing</h1>
+            </div>
+
+            <div class="price-card-wrapper">
+
+                <div class="price-card">
+                    <p class="section-subtitle">FREE</p>
+                    <div class="price">
+                        <i class="fas fa-wallet"></i>
+                        <p>$10.99</p>
+                    </div>
+                    <ul class="package-features" role="list">
+                        <li><i class="fas fa-check-circle"></i>10 GB SSD Storage</li>
+                        <li><i class="fas fa-check-circle"></i>1 Custom Domain + SSL</li>
+                        <li><i class="fas fa-check-circle"></i>Dedicated Support Agent</li>
+                        <li><i class="fas fa-check-circle"></i>Custom WP Themes</li>
+                        <li><i class="fas fa-check-circle"></i>Free Domain 1st Year</li>
+                    </ul>
+                    <button class="pricing-btn">Get Started<i class="fas fa-arrow-right"></i></button>
+                </div>
+
+                <div class="price-card">
+                    <p class="section-subtitle">BASIC</p>
+                    <div class="price">
+                        <i class="fas fa-wallet"></i>
+                        <p>$24.95</p>
+                    </div>
+                    <ul class="package-features" role="list">
+                        <li><i class="fas fa-check-circle"></i>40 GB SSD Storage</li>
+                        <li><i class="fas fa-check-circle"></i>Unlimited Domains + SSL</li>
+                        <li><i class="fas fa-check-circle"></i>Dedicated Support Agent</li>
+                        <li><i class="fas fa-check-circle"></i>Custom Themes + CDN</li>
+                        <li><i class="fas fa-check-circle"></i>Free Domain 1st Year</li>
+                    </ul>
+                    <button class="pricing-btn">Get Started<i class="fas fa-arrow-right"></i></button>
+                </div>
+
+                <div class="price-card">
+                    <p class="section-subtitle">PREMIUM</p>
+                    <div class="price">
+                        <i class="fas fa-wallet"></i>
+                        <p>$28.99</p>
+                    </div>
+                    <ul class="package-features" role="list">
+                        <li><i class="fas fa-check-circle"></i>100 GB SSD Storage</li>
+                        <li><i class="fas fa-check-circle"></i>Unlimited Domains + SSL</li>
+                        <li><i class="fas fa-check-circle"></i>Dedicated Support Agent</li>
+                        <li><i class="fas fa-check-circle"></i>Daily Website Back Up</li>
+                        <li><i class="fas fa-check-circle"></i>Analytics and Malware Scanning</li>
+                    </ul>
+                    <button class="pricing-btn">Get Started<i class="fas fa-arrow-right"></i></button>
+                </div>
+
+            </div>
+            <div class="trial-pricing">
+                <div class="trial-text-wrapper">
+                    <p class="ready">Ready to start?</p>
+                    <h3 class="start">Our professionals are waiting for your ideas!</h3>
+                </div>
+                <button class="start-trial-btn">Get Started<i class="fas fa-arrow-right"></i></button>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    
+    <footer>
+        <button onclick="topFunction()" id="topBtn" title="Go to top">TOP</button>
+        <div class="footer-wrapper">
+            <div class="footer-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+
+            <div class="footer-middle-text">
+                <a href="https://www.termsfeed.com/live/4d49d966-c673-41ae-9700-3f4731e799ec">Terms & Conditions</a>
+                <a href="https://www.privacypolicies.com/live/6a8ac2d3-108f-48b0-b7b4-55c3e6998f75">Privacy Policy</a>
+            </div>
+            <a href="#" onclick="event.preventDefault()">2023 All rights reserved</a>
+        </div>
+    </footer>
+
+    <script src="popup.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
